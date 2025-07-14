@@ -1,0 +1,88 @@
+<h1>Componetes de Angular Material</h1>
+
+<nav style="margin-bottom: 2em;">
+  <table style="margin: 0 auto; border-collapse: separate; border-spacing: 1em;">
+    <tr>
+      <td><button (click)="showComponent('autocomplete')">Autocomplete</button></td>
+      <td><button (click)="showComponent('autocomplete-overview')">Autocomplete Overview Basico</button></td>
+      <td><button (click)="showComponent('badge')">Badge</button></td>
+      <td><button (click)="showComponent('button')">Button</button></td>
+      <td><button (click)="showComponent('button-toggle')">Button Toggle</button></td>
+    </tr>
+    <tr>
+      <td><button (click)="showComponent('cards')">Cards</button></td>
+      <td><button (click)="showComponent('checkbox')">CheckBoxito</button></td>
+      <td><button (click)="showComponent('chips')">Chips?</button></td>
+      <td><button (click)="showComponent('dialog')">Dialog</button></td>
+      <td><button (click)="showComponent('datepicker')">Datepicker</button></td>
+    </tr>
+    <tr>
+      <td><button (click)="showComponent('list')">List</button></td>
+      <td><button (click)="showComponent('divis')">Divis</button></td>
+      <td><button (click)="showComponent('expanel')">Expanel</button></td>
+      <td><button (click)="showComponent('input')">Input</button></td>
+      <td><button (click)="showComponent('formfield')">Formfield?</button></td>
+    </tr>
+  </table>
+</nav>
+
+<div *ngIf="selectedComponent === 'autocomplete'" class="center-content">
+  <h1>Autocomplete</h1>
+  <app-mat-autocomplete></app-mat-autocomplete>
+</div>
+<div *ngIf="selectedComponent === 'autocomplete-overview'" class="center-content">
+  <h1>Autocomplete Overview Basico</h1>
+  <app-autocomplete-overview></app-autocomplete-overview>
+</div>
+<div *ngIf="selectedComponent === 'badge'" class="center-content">
+  <h1>Badge</h1>
+  <app-badge></app-badge>
+</div>
+<div *ngIf="selectedComponent === 'button'" class="center-content">
+  <h1>button</h1>
+  <app-button></app-button>
+</div>
+<div *ngIf="selectedComponent === 'button-toggle'" class="center-content">
+  <h1>button toggle</h1>
+  <app-buttontoggle></app-buttontoggle>
+</div>
+<div *ngIf="selectedComponent === 'cards'" class="center-content">
+  <h1>cards</h1>
+  <app-cart></app-cart>
+</div>
+<div *ngIf="selectedComponent === 'checkbox'" class="center-content">
+  <h1>CheckBoxito</h1>
+  <app-checkbox></app-checkbox>
+</div>
+<div *ngIf="selectedComponent === 'chips'" class="center-content">
+  <h1>Chips?</h1>
+  <app-chips></app-chips>
+</div>
+<div *ngIf="selectedComponent === 'dialog'" class="center-content">
+  <h1>Dialog</h1>
+  <app-cdialogo></app-cdialogo>
+</div>
+<div *ngIf="selectedComponent === 'datepicker'" class="center-content">
+  <h1>Datepicker</h1>
+  <app-datepicker></app-datepicker>
+</div>
+<div *ngIf="selectedComponent === 'list'" class="center-content">
+  <h1>List</h1>
+  <app-list></app-list>
+</div>
+<div *ngIf="selectedComponent === 'divis'" class="center-content">
+  <h1>divis</h1>
+  <app-divis></app-divis>
+</div>
+<div *ngIf="selectedComponent === 'expanel'" class="center-content">
+  <h1>expanel</h1>
+  <app-expanel></app-expanel>
+</div>
+<div *ngIf="selectedComponent === 'input'" class="center-content">
+  <h1>input</h1>
+  <app-input></app-input>
+</div>
+<div *ngIf="selectedComponent === 'formfield'" class="center-content">
+  <h1>formfield?</h1>
+  <app-formfield></app-formfield>
+</div>
